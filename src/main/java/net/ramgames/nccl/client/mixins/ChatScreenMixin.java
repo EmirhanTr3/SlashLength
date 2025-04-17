@@ -16,8 +16,7 @@ public class ChatScreenMixin {
 
     @Inject(method = "onChatFieldUpdate", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/ChatInputSuggestor;setWindowActive(Z)V", shift = At.Shift.BEFORE))
     private void modifyChatLengthIfCommand(String chatText, CallbackInfo ci) {
-        if(this.chatField.getText().startsWith("/")) this.chatField.setMaxLength(Integer.MAX_VALUE);
-        else this.chatField.setMaxLength(256);
+        this.chatField.setMaxLength(Integer.MAX_VALUE);
     }
 
 }

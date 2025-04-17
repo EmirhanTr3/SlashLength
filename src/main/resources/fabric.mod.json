@@ -2,10 +2,11 @@
   "schemaVersion": 1,
   "id": "nccl",
   "version": "${version}",
-  "name": "NoCommandChatLimit",
-  "description": "A simple mod that removes the chat limit when typing commands",
+  "name": "NoChatLimit",
+  "description": "A simple mod that removes the chat limit",
   "authors": [
-    "RamGames"
+    "RamGames",
+    "EmirhanTr3"
   ],
   "contact": {
     "repo": "https://github.com/RamGemes/NoCommandChatLimit"
